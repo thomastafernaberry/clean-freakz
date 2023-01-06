@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;900&display=swap');
+
+h1, h2, h3, p, body {
+    margin: 0;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 136px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h2 {
+    color: #161616;
+    font-size: 36px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h3 {
+    color: #41B1F4;
+    font-size: 32px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+p {
+    color: #161616;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+    text-decoration: none;
+} 
+
+.color-white {
+    color: #FFFFFF;
+}
+
+nav {
+    background-color: #161616;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    position: sticky;
+    z-index: 1;
+}
+
+.background-image {
+    background-image: url(images/porsche.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    z-index: -1;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 100%);
+    filter: grayscale(100%);
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 5px 30px rgba(0, 0, 0, 80%);
+}
+
+.section-why-us {
+    display: grid;
+    place-items: center;
+    grid-template-rows: auto auto;
+    margin: 150px;
+    gap: 35px;
+    position: relative;
+}
+
+.horizontal-bar {
+    background-color: #161616;
+    width: 100px;
+    height: 2px;
+}
+
+.section-why-us p {
+    width: 50vw;
+}
+
+.section-packages {
+    display: grid;
+    place-items: center;
+    grid: auto / auto auto auto auto;
+    margin-top: 200px;
+}
+
+.package {
+    width: 290px;
+    height: 445px;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 20%);
+    border-radius: 10px;
+}
+
+.package:hover {
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 30%);
+}
+
+.package h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 42px;
+}
+
+.package-header {
+    display: grid;
+    place-items: center;
+    background-color: #41B1F4;
+    height: 85px;
+    border-radius: 10px 10px 0 0;
+}
+
+.package-body {
+    padding: 15px;
+}
+
+.package-prices {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.package-description {
+    margin-top: 50px;
+}
+
+.section-contact {
+    display: grid;
+    grid: 1fr / auto auto;
+    background-color: #41B1F4;
+    height: 250px;
+    margin-top: 200px;
+    height: auto;
+    padding: 50px;
+}
+
+.section-contact textarea {
+    font-size: 16px;
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+}
+
+#name {
+    width: 200px;
+}
+
+#e-mail {   
+    width: 275px;
+}
+
+#message {
+    width: 35vw;
+    height: 150px;
+}
